@@ -10,6 +10,9 @@ import CourseDetails from './Components/CourseDetails/CourseDetails';
 import Login from './Components/Shared/Login/Login';
 import Registration from './Components/Registration/Registration';
 import CheckOut from './Components/CheckOut/CheckOut';
+import Private from './Private/Private';
+import Blog from './Components/Blog/Blog';
+import Faq from './Components/Faq/Faq';
 
 function App() {
   const router = createBrowserRouter([
@@ -48,8 +51,16 @@ function App() {
           element: <Registration></Registration>
         },
         {
+          path: '/blog',
+          element: <Blog></Blog>
+        },
+        {
+          path: '/faq',
+          element: <Faq></Faq>
+        },
+        {
           path: '/checkout/:id',
-          element: <CheckOut></CheckOut>,
+          element: <Private><CheckOut></CheckOut></Private>,
           loader: async ({ params }) => {
             return fetch(`http://localhost:5000/course/${params.id}`);
           }
