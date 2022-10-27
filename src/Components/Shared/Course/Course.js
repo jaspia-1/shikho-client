@@ -35,14 +35,14 @@ const Course = ({ course }) => {
         // </div>
 
         <div>
-            <div class="card text-center rounded h-100">
+            <div class="card text-center rounded h-100 shadow">
                 <img src={img} className="fluid" alt="" />
 
                 <div class="card-body">
-                    <h5 class="card-title">{title}</h5>
+                    <h5 className="card-title fw-bold ">{title}</h5>
                     <div className='text-start ms-2'>
 
-                        <p className='m-0 text-end' >{name}</p>
+                        <p className='m-0 text-end text-secondary' >{name}</p>
                         <p >{rating}</p>
                         <div className='d-flex justify-content-between m-0'>
                             <p className='gray-text m-0' ><small> {duration}</small></p>
@@ -51,8 +51,8 @@ const Course = ({ course }) => {
                         </div>
                     </div>
                 </div>
-                <div class="card-footer text-muted">
-                    2 days ago
+                <div class="card-footer">
+                    <Link to={`/course/${id}`}><button className='btn btn-outline-primary w-100'>Go Details</button></Link>
                 </div>
             </div>
         </div>
