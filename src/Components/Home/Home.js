@@ -22,7 +22,7 @@ const Home = () => {
 
                 </Container>
                 <div className='company-bg p-3'>
-                    <div className='d-flex container py-3   justify-content-evenly'>
+                    <div className='d-md-flex container py-3   justify-content-evenly'>
                         <img className='img-fluid' style={{ height: "50px" }} src="/assets/company/cimg1.png" alt="" />
                         <img className='img-fluid' style={{ height: "50px" }} src="/assets/company/cimg2.png" alt="" />
                         <img className='img-fluid' style={{ height: "50px" }} src="/assets/company/cimg3.png" alt="" />

@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './Layout/Main';
 import Home from './Components/Home/Home';
+import AllCourse from './Components/AllCourse/AllCourse';
 
 function App() {
   const router = createBrowserRouter([
@@ -14,7 +15,11 @@ function App() {
         {
           path: '/',
           element: <Home></Home>
-        }
+        },
+        {
+          path: '/allcourses',
+          element: <AllCourse></AllCourse>
+        },
       ]
     }
   ])
