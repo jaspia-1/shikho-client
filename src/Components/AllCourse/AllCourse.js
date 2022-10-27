@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import AllCatagory from '../Shared/AllCatagory/AllCatagory';
 import Course from '../Shared/Course/Course';
 
 const AllCourse = () => {
@@ -24,8 +25,8 @@ const AllCourse = () => {
                             }
                         </Row>
                     </Col>
-                    <Col md={3}>
-                        <h1>SideBar</h1>
+                    <Col md={3} className="d-none  d-md-block">
+                        <AllCatagory></AllCatagory>
                     </Col>
                 </Row>
             </Container>

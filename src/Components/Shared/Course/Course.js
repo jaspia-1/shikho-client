@@ -8,10 +8,10 @@ const Course = ({ course }) => {
     return (
 
         <div>
-            <div class="card text-center rounded h-100 shadow">
+            <div className="card text-center rounded h-100 shadow">
                 <img src={img} className="fluid" alt="" />
 
-                <div class="card-body">
+                <div className="card-body">
                     <h5 className="card-title fw-bold ">{title}</h5>
                     <div className='text-start ms-2'>
 
@@ -24,7 +24,7 @@ const Course = ({ course }) => {
                         </div>
                     </div>
                 </div>
-                <div class="card-footer">
+                <div className="card-footer">
                     <Link to={`/course/${id}`}><button className='btn btn-outline-primary w-100'>Go Details</button></Link>
                 </div>
             </div>

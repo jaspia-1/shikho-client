@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
+import AllCatagory from '../AllCatagory/AllCatagory';
 import ToggleSwitch from './ToggleSwitch';
 
 const SiteHeader = () => {
@@ -17,12 +18,13 @@ const SiteHeader = () => {
                             <NavLink className="nav-link" to="/faq">FAQ</NavLink>
                             <NavLink className="nav-link" to="/blog">Blog</NavLink>
 
-                        </Nav>
-                        <Nav>
+
+                            <div className='d-md-none'>
+
+                                <AllCatagory></AllCatagory>
 
 
-
-
+                            </div>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
