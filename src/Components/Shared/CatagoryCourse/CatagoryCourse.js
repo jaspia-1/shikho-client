@@ -16,7 +16,13 @@ const CatagoryCourse = () => {
 
             <Row>
 
+                <Col md={3} className="d-none  d-md-block" >
 
+
+
+                    <AllCatagory></AllCatagory>
+
+                </Col>
                 <Col md={9} xs={12}>
                     <Row className="row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 my-5">
 
@@ -25,13 +31,7 @@ const CatagoryCourse = () => {
                         }
                     </Row>
                 </Col>
-                <Col md={2} className="order-sm-1 order-md-2  " >
 
-                    <div className='w-100 d-none d-md-block  '>
-
-                        <AllCatagory></AllCatagory>
-                    </div>
-                </Col>
 
             </Row>
 

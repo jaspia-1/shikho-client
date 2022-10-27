@@ -15,14 +15,14 @@ const AllCatagory = () => {
 
     return (
         <div className=' p-1 rounded '>
-            <h4 style={{ color: "#4699cf" }} className=' py-3' > Catagory</h4>
+            <h4 style={{ color: "#4699cf" }} className=' py-3 mx-auto' > Catagory</h4>
             <hr />
-            <ul>
+            {/* <ul> */}
 
-                {
-                    allCatagory.map((catagory, idx) => <CatagoryName key={idx} catagory={catagory}></CatagoryName>)
-                }
-            </ul>
+            {
+                allCatagory.map((catagory, idx) => <CatagoryName key={idx} catagory={catagory}></CatagoryName>)
+            }
+            {/* </ul> */}
 
         </div>
     );

@@ -17,6 +17,9 @@ const AllCourse = () => {
         <div>
             <Container>
                 <Row>
+                    <Col md={3} className="d-none  d-md-block">
+                        <AllCatagory></AllCatagory>
+                    </Col>
                     <Col md={9} xs={12}>
                         <Row className="row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 my-5">
 
@@ -25,9 +28,7 @@ const AllCourse = () => {
                             }
                         </Row>
                     </Col>
-                    <Col md={3} className="d-none  d-md-block">
-                        <AllCatagory></AllCatagory>
-                    </Col>
+
                 </Row>
             </Container>
         </div>
