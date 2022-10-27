@@ -1,8 +1,8 @@
 import React, { createContext, useEffect } from 'react';
 import { createUserWithEmailAndPassword, getAuth, GithubAuthProvider, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
-import app from '../Firebase/firebase.init';
 import { useState } from 'react';
 import { ToastContainer } from 'react-bootstrap';
+import app from '../../Firebase/firebase.init';
 export const AuthContext = createContext()
 const auth = getAuth(app);
 const UserContext = ({ children }) => {
