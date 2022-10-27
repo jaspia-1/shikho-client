@@ -7,7 +7,7 @@ const AllCourse = () => {
     const [courses, setCourses] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/allcourses')
+        fetch('https://shiko-server-jaspia-1.vercel.app/allcourses')
             .then(res => res.json())
             .then(data => setCourses(data))
 

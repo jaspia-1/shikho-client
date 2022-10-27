@@ -34,14 +34,14 @@ function App() {
           path: '/catagorycourses/:id',
           element: <CatagoryCourse ></CatagoryCourse>,
           loader: async ({ params }) => {
-            return fetch(`http://localhost:5000/courses/${params.id}`);
+            return fetch(`https://shiko-server-jaspia-1.vercel.app/courses/${params.id}`);
           }
         },
         {
           path: '/course/:id',
           element: <CourseDetails ></CourseDetails>,
           loader: async ({ params }) => {
-            return fetch(`http://localhost:5000/course/${params.id}`);
+            return fetch(`https://shiko-server-jaspia-1.vercel.app/course/${params.id}`);
           }
         },
         {
@@ -64,7 +64,7 @@ function App() {
           path: '/checkout/:id',
           element: <Private><CheckOut></CheckOut></Private>,
           loader: async ({ params }) => {
-            return fetch(`http://localhost:5000/course/${params.id}`);
+            return fetch(`https://shiko-server-jaspia-1.vercel.app/course/${params.id}`);
           }
         },
 

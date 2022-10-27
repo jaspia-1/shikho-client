@@ -8,7 +8,7 @@ import CatagoryName from '../CatagoryName/CatagoryName';
 const AllCatagory = () => {
     const [allCatagory, setAllCatagory] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/catagory')
+        fetch('https://shiko-server-jaspia-1.vercel.app/catagory')
             .then(res => res.json())
             .then(data => setAllCatagory(data));
     }, []);
