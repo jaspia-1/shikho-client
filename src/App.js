@@ -13,12 +13,14 @@ import CheckOut from './Components/CheckOut/CheckOut';
 import Private from './Private/Private';
 import Blog from './Components/Blog/Blog';
 import Faq from './Components/Faq/Faq';
+import Error from './Components/Error/Error';
 
 function App() {
   const router = createBrowserRouter([
     {
       path: '/',
       element: <Main></Main>,
+      errorElement: <Error></Error>,
       children: [
         {
           path: '/',
